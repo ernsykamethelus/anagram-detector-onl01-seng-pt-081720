@@ -24,4 +24,4 @@ class Anagram
   ba = detector.match(['ab', 'abc', 'bac'])
   
   listen = Anagram.new("listen")
-  
+  listen.match(%w(enlists google inlets banana))
