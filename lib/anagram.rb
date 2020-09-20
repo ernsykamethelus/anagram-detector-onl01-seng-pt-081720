@@ -1,31 +1,16 @@
 class Anagram
-  attr_accessor :diaper, :ba, :listen, :allergy
-  
-  def initialize() 
-    @diaper = diaper
+
+  attr_accessor :word
+  def initialize(word)
+
+    @word = word
+
   end
-  
-  def initialize()
-    @ba= ba
+
+  def match(phrase)
+
+    phrase.select do |phrase_word|
+      #binding.pry
+      phrase_word.split("").sort == @word.split("").sort
+    end
   end
-  
-  def initialize()
-    @listen=listen
-  end
-  
-  def initialize()
-    @allergy=allergy
-  end
-end
-  
-  diaper = Anagram.new("diaper")
-  diaper.match(%w(hello world zombies pants dipper))
-  
-  ba = Anagram.new("ba")
-  ba.match(%w['ab', 'abc', 'bac'])
-  
-  listen = Anagram.new("listen")
-  listen.match(%w(enlists google inlets banana))
-  
-  allergy = Anagram.new("allergy")
-  allergy.match (%w(gallery ballerina regally clergy largely leading))
