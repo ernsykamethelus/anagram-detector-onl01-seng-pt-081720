@@ -14,3 +14,4 @@ class Anagram
       phrase_word.split("").sort == @word.split("").sort
     end
   end
+end
