@@ -21,4 +21,7 @@ class Anagram
   diaper.match(%w(hello world zombies pants dipper))
   
   ba = Anagram.new("ba")
+  ba = detector.match(['ab', 'abc', 'bac'])
+  
+  listen = Anagram.new("listen")
   
