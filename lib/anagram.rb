@@ -14,7 +14,7 @@ class Anagram
   end
   
   def initialize()
-    @allergy = allergy
+    @allergy=allergy
   end
 end
   
