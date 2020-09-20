@@ -17,4 +17,4 @@ class Anagram
     @allergy = allergy
   end
   
-  diaper = Anagram.new()
+  diaper = Anagram.new(diaper)
